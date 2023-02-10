@@ -1,10 +1,10 @@
-import Cards from './Cards';
+import Card from './Card';
 import FormField from './FormField';
 import Loader from './Loader';
 
 
 export {
-    Cards,
+    Card,
     FormField,
     Loader
 }

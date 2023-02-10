@@ -1,12 +1,10 @@
-import { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { logo } from "./assets";
 import { Home, CreatePost } from "./pages";
 
-function App() {
+const App = () => (
   
-
-  return (
     <BrowserRouter>
       <header className="w-full flex justify-between item-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to="/">
@@ -14,8 +12,7 @@ function App() {
         </Link>
         <Link
           to="/create-post"
-          className="font-inter font-medium bg-[#ff8906] text-white px-6 py-2"
-        >
+          className="font-inter font-medium bg-[#ff8906] text-white px-6 py-2">
           Create
         </Link>
       </header>
@@ -26,7 +23,7 @@ function App() {
         </Routes>
       </main>
     </BrowserRouter>
-  );
-}
+ 
+);
 
-export default App
+export default App;
